@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/menu_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/menu_top" />
+
+    <include
+        android:id="@+id/menu_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_top"
+        layout="@layout/menu_add" />
+
+    <LinearLayout
+        android:id="@+id/analyse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_add"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 正面舆情数 -->
+
+            <TextView
+                android:id="@+id/positive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+            <!-- 中立舆情数 -->
+
+            <TextView
+                android:id="@+id/neutral"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+            <!-- 负面舆情数 -->
+
+            <TextView
+                android:id="@+id/negative"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 僵尸数 -->
+
+            <TextView
+                android:id="@+id/zombie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+            <!-- 博主数 -->
+
+            <TextView
+                android:id="@+id/blogger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.vmojing.ui.DragListView
+        android:id="@+id/showlsitview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/analyse" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/analyse" >
+    </ListView>
+
+
+</RelativeLayout>

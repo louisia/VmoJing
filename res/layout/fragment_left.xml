@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#0000ff" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000ff"
+        android:contentDescription="@string/notext"
+        android:src="@drawable/logo" 
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#0000ff" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/notext"
+        android:src="@drawable/offline_user" 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/topicmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:drawableBottom="@drawable/divider"
+        android:drawableStart="@drawable/menu_topic"
+        android:gravity="center"
+        android:text="@string/menu_topic"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/bloggermenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableBottom="@drawable/divider"
+        android:drawableStart="@drawable/menu_blogger"
+        android:gravity="center"
+        android:text="@string/menu_blogger"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/cluemenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableBottom="@drawable/divider"
+        android:drawableStart="@drawable/menu_clue"
+        android:gravity="center"
+        android:text="@string/menu_clue"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/publicmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableBottom="@drawable/divider"
+        android:drawableStart="@drawable/menu_public"
+        android:gravity="center"
+        android:text="@string/menu_public"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/settingmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableBottom="@drawable/divider"
+        android:drawableStart="@drawable/menu_setting"
+        android:gravity="center"
+        android:text="@string/menu_setting"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/processmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableBottom="@drawable/divider"
+        android:drawableStart="@drawable/menu_process"
+        android:gravity="center"
+        android:text="@string/menu_process"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+</LinearLayout>

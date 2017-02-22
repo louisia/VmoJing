@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!--  
+    <include
+        android:id="@+id/menu_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/menu_top" />
+        -->
+    <!-- 添加话题 -->
+
+    <LinearLayout
+        android:id="@+id/add_topic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/topic_keyword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/textview"
+            android:hint="@string/keyword"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/topic_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add" />
+    </LinearLayout>
+    <!-- 添加博主 -->
+
+    <LinearLayout
+        android:id="@+id/add_blogger"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" 
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/blogger_keyword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/textview"
+            android:hint="@string/keyword"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/blogger_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add" />
+    </LinearLayout>
+    
+    <!-- 添加线索 -->
+    <LinearLayout
+        android:id="@+id/add_clue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" 
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/clue_keyword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/textview"
+            android:hint="@string/keyword"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/clue_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add" 
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 用户头像 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/weibo_head"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/notext" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 用户名称 -->
+
+            <TextView
+                android:id="@+id/weibo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#424d54"
+                android:textSize="20sp" />
+
+            <!-- 微博发布时间 -->
+
+            <TextView
+                android:id="@+id/weibo_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#efa608"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 微博正文内容 -->
+
+    <include
+        android:id="@+id/weibo_layout"
+        layout="@layout/item_weibocontent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider"
+        android:contentDescription="@string/notext" />
+
+    <!-- 转发的子微博内容 -->
+
+    <include
+        android:id="@+id/weibo_sublayout"
+        layout="@layout/item_weibocontent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider"
+        android:contentDescription="@string/notext" />
+
+    <!-- 微博评论转发 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/weibo_retweet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/retweet"
+            android:drawableStart="@drawable/retweet"
+            android:textColor="#9ba0aa"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/weibo_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/comment"
+            android:drawableStart="@drawable/comment"
+            android:textColor="#9ba0aa"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/weibo_like"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/like"
+            android:drawableStart="@drawable/like"
+            android:textColor="#9ba0aa"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

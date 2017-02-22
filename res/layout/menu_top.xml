@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_background"
+    android:padding="7dip" >
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/notext"
+        android:src="@drawable/home" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/left"
+        android:ellipsize="end"
+        android:maxEms="6"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/left"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/add"
+        android:clickable="true"
+        android:contentDescription="@string/notext" />
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/left"
+        android:src="@drawable/select"
+        android:clickable="true"
+        android:contentDescription="@string/notext" />
+
+</RelativeLayout>

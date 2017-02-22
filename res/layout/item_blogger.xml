@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 用户头像 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/blogger_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/notext" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- 用户名称 -->
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#424d54"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/notext"
+                    android:src="@drawable/user_abnormal" />
+            </LinearLayout>
+
+            <!-- 用户监测时间 -->
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#efa608"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 微博粉丝好友数量 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/weibocount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#9ba0aa"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/followercount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#9ba0aa"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/friendcount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#9ba0aa"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider"
+        android:contentDescription="@string/notext" />
+
+</LinearLayout>

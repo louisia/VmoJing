@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">vmojing</string>
+    <string name="action_settings">Settings</string>
+    <string name="loginname">用户名：</string>
+    <string name="password">密   码  ：</string>
+    <string name="menu_topic">话题监测</string>
+    <string name="topic_type">话题类型</string>
+    <string name="topic_all">全部话题</string>
+    <string name="topic_leader">领导话题</string>
+    <string name="topic_depar">部门话题</string>
+    <string name="topic_other">其余话题</string>
+    <string name="topic_attr">话题属性</string>
+    <string name="topic_normal">正常话题</string>
+    <string name="topic_abnormal">异常话题</string>
+    <string name="topic_cancel">撤销    |</string>
+    <string name="topic_deltetotal">总计    </string>
+    <string name="topic_delete">|    删除   </string>
+    <string name="confirm">确定</string>
+    <string name="menu_blogger">博主关注</string>
+    <string name="menu_clue">微博线索</string>
+    <string name="menu_public">公共热点</string>
+    <string name="notext"></string>
+    <string name="menu_process">舆情处理</string>
+    <string name="receiver">收件人</string>
+    <string name="content">信件内容</string>
+    <string name="send">发送</string>
+    <string name="menu_setting">阈值设置</string>
+    <string name="topic_setting">异常话题设置</string>
+    <string name="blogger_setting">异常博主设置</string>
+    <string name="clue_setting">异常线索设置</string>
+    <string name="mail_setting">邮件通知地址</string>
+    <string name="mail_example">example@sina.com</string>
+    <string name="add">添加</string>
+    <string name="keyword">输入添加内容</string>
+	<string-array name="topictype">
+	    <item >领导</item>
+	    <item >部门</item>
+	    <item >其余</item>
+	</string-array>
+	<string name="newmore">下拉可以刷新</string>
+	<string name="oldmore">查看更多</string>
+	<string name="loading">加载中。。。</string>
+	<string name="change">切换账号</string>
+	<string name="exit">退出应用</string>
+	<string name="cancel">取消</string>
+</resources>

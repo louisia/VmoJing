@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/comment_head"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/notext"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 用户名称 -->
+
+            <TextView
+                android:id="@+id/comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#424d54"
+                android:textSize="20sp" />
+            <!-- 发布时间 -->
+
+            <TextView
+                android:id="@+id/comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="#efa608"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <!-- 微博正文 -->
+
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6b717b"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

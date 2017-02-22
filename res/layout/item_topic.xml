@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
+        <!-- 话题名称 -->
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 话题创建时间 -->
+
+        <TextView
+            android:id="@+id/createtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:textColor="#efa608"
+            android:textSize="15sp" />
+        <!-- 话题类型 -->
+
+        <ImageView
+            android:id="@+id/type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/notext"
+            android:src="@drawable/user_normal" />
+        <!-- 话题状态 -->
+
+        <ImageView
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/notext"
+            android:src="@drawable/user_normal" />
+    </LinearLayout>
+
+    <!-- 今日微博数 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/todaycount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#9ba0aa"
+            android:textSize="15sp" />
+        <!-- 总微博数 -->
+
+        <TextView
+            android:id="@+id/totalcount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#9ba0aa"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
